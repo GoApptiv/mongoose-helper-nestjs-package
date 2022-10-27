@@ -1,0 +1,47 @@
+{
+  "name": "@goapptiv/mongoose-helper-nestjs",
+  "version": "1.0.0",
+  "description": "This package provides additional utility functions for mongoose like Paginator, MongoParamId decorator and much more",
+  "main": "dist/index.js",
+  "keywords": [
+    "nestjs",
+    "rest-response"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GoApptiv/mongoose-helper-nestjs-package"
+  },
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "nest build",
+    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
+    "start": "nest start",
+    "start:dev": "nest start --watch",
+    "start:debug": "nest start --debug --watch",
+    "start:prod": "node dist/main",
+    "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:cov": "jest --coverage",
+    "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
+    "test:e2e": "jest --config ./test/jest-e2e.json"
+  },
+  "author": "Sagar Vaghela <sagar.vaghela@goapptiv.com>",
+  "dependencies": {
+    "@goapptiv/exception-handler-nestjs": "^1.0.0",
+    "@nestjs/common": "^8.0.0",
+    "class-validator": "^0.13.2",
+    "mongoose": "^6.7.0"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^9.0.0",
+    "@types/node": "^18.11.6",
+    "reflect-metadata": "^0.1.13",
+    "rimraf": "^3.0.2",
+    "rxjs": "^7.5.7",
+    "typescript": "^4.8.4"
+  },
+  "peerDependencies": {
+    "@nestjs/common": "^8.0.0"
+  }
+}
