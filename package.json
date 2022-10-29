@@ -1,6 +1,6 @@
 {
   "name": "@goapptiv/mongoose-helper-nestjs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This package provides additional utility functions for mongoose like Paginator, MongoParamId decorator and much more",
   "main": "dist/index.js",
   "keywords": [
@@ -27,12 +27,7 @@
     "test:e2e": "jest --config ./test/jest-e2e.json"
   },
   "author": "Sagar Vaghela <sagar.vaghela@goapptiv.com>",
-  "dependencies": {
-    "@goapptiv/exception-handler-nestjs": "^1.0.0",
-    "@nestjs/common": "^8.0.0",
-    "class-validator": "^0.13.2",
-    "mongoose": "^6.7.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@nestjs/cli": "^9.0.0",
     "@types/node": "^18.11.6",
@@ -42,6 +37,9 @@
     "typescript": "^4.8.4"
   },
   "peerDependencies": {
-    "@nestjs/common": "^8.0.0"
+    "@nestjs/common": "^8.0.0 || ^9.0.0",
+    "class-validator": "^0.13.2",
+    "mongoose": "^6.7.0",
+    "@goapptiv/exception-handler-nestjs": "^1.0.1"
   }
 }
