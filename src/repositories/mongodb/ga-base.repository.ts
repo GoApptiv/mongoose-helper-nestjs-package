@@ -10,7 +10,7 @@ export class GaBaseRepository<T> {
   }
 
   /**
-   * creates pagination for normal queries
+   * Creates pagination for normal queries
    * @see
    */
   async paginate(
@@ -42,7 +42,7 @@ export class GaBaseRepository<T> {
   }
 
   /**
-   * creates pagination for aggregated queries
+   * Creates pagination for aggregated queries
    * @see https://github.com/aravindnc/mongoose-aggregate-paginate-v2/blob/master/lib/mongoose-aggregate-paginate.js
    */
   async aggregatePaginate(
@@ -80,23 +80,23 @@ export class GaBaseRepository<T> {
   }
 
   /**
-   * calculates total pages
+   * Calculates total pages
    */
-  calculateTotalPages(total: number, limit: number) {
+  calculateTotalPages(total: number, limit: number):number {
     return Math.ceil(total / limit) || 1;
   }
 
   /**
-   * checks result for pagination has next page
+   * Checks result for pagination has next page
    */
-  hasNextPage(limit: number, currentPage: number, totalPages: number) {
+  hasNextPage(limit: number, currentPage: number, totalPages: number):boolean {
     return currentPage * limit < totalPages;
   }
 
   /**
-   *  checks result for pagination has previous page
+   *  Checks result for pagination has previous page
    */
-  hasPreviousPage(currentPage: number) {
+  hasPreviousPage(currentPage: number):boolean {
     return currentPage > 1;
   }
 }
