@@ -1,6 +1,6 @@
 {
   "name": "@goapptiv/mongoose-helper-nestjs",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "This package provides additional utility functions for mongoose like Paginator, MongoParamId decorator and much more",
   "main": "dist/index.js",
   "keywords": [
@@ -40,6 +40,6 @@
     "@nestjs/common": "^8.0.0 || ^9.0.0 || ^10.0.0",
     "class-validator": "^0.13.2 || ^0.14.0",
     "mongoose": "^6.7.0 || ^7.0.0 || ^10.0.0",
-    "@goapptiv/exception-handler-nestjs": "^1.0.3"
+    "@goapptiv/exception-handler-nestjs": "^1.0.4"
   }
 }
